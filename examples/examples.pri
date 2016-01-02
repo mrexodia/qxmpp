@@ -3,8 +3,8 @@ include(../qxmpp.pri)
 TEMPLATE = app
 CONFIG += console
 
-QMAKE_LIBDIR += ../../src
-QMAKE_RPATHDIR += $$OUT_PWD/../../src
+QMAKE_LIBDIR += ../../lib
+QMAKE_RPATHDIR += $$OUT_PWD/../../lib
 INCLUDEPATH += $$QXMPP_INCLUDEPATH
 LIBS += $$QXMPP_LIBS
 

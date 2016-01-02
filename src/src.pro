@@ -2,6 +2,7 @@ include(../qxmpp.pri)
 
 QT -= gui
 
+TARGET = $$qtLibraryTarget($$QXMPP_LIBRARY_NAME)
 TEMPLATE = lib
 
 CONFIG += $$QXMPP_LIBRARY_TYPE
@@ -13,9 +14,9 @@ LIBS += $$QXMPP_INTERNAL_LIBS
 # Target definition
 TARGET = $$QXMPP_LIBRARY_NAME
 VERSION = $$QXMPP_VERSION
-win32 {
-    DESTDIR = $$OUT_PWD/../bin
-}
+
+DESTDIR = $$OUT_PWD/../lib
+DLLDESTDIR = $$OUT_PWD/../bin
 
 include(base/base.pri)
 include(client/client.pri)

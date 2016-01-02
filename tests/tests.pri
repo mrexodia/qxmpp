@@ -5,8 +5,8 @@ QT += testlib
 CONFIG -= app_bundle
 CONFIG += testcase
 
-QMAKE_LIBDIR += ../../src
-QMAKE_RPATHDIR += $$OUT_PWD/../../src
+QMAKE_LIBDIR += ../../lib
+QMAKE_RPATHDIR += $$OUT_PWD/../../lib
 INCLUDEPATH += $$PWD $$QXMPP_INCLUDEPATH
 LIBS += $$QXMPP_LIBS
 
